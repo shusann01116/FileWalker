@@ -13,31 +13,7 @@ function App() {
 
   return (
     <main className="flex flex-col items-center justify-center">
-      <section className="flex gap-x-4 items-center p-4">
-        <form
-          className="border rounded-2xl border-zinc-200 p-4 flex flex-col gap-y-4"
-          onSubmit={(e) => {
-            e.preventDefault();
-            calc();
-          }}
-        >
-          <section className="flex gap-x-4 items-center">
-            <input
-              className="max-w-12 border-b-2 border-zinc-200 focus:border-sky-300"
-              type="number"
-              onChange={(e) => setN(Number.parseInt(e.currentTarget.value))}
-              placeholder="Enter a number..."
-            />
-            <h1 className="text-4xl font-mono font-extrabold">{fib}</h1>
-          </section>
-          <button
-            className="bg-sky-300 text-white py-1 px-2 rounded-lg"
-            type="submit"
-          >
-            Calc
-          </button>
-        </form>
-      </section>
+      <h1 className="text-primary-foreground bg-primary">Hello World</h1>
     </main>
   );
 }
